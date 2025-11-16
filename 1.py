@@ -1,6 +1,6 @@
 import pandas as pd
 
-df1= pd.read_excel("test.xlsx")
+df1= pd.read_excel("games1.xlsx")
 
 p1=df1.iloc[0,1]
 p2=df1.iloc[0,2]
