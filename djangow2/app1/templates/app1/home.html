@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Project</title>
+</head>
+<body>
+    <h2>Select Data Source</h2>
+
+    <form method="post" action="{% url 'report' %}">
+        {% csrf_token %}
+
+        <label>
+            <input type="radio" name="source" value="csv" required>
+            CSV File
+        </label><br>
+
+        <label>
+            <input type="radio" name="source" value="excel">
+            Excel File
+        </label><br>
+
+        <label>
+            <input type="radio" name="source" value="api">
+            Live API
+        </label><br><br>
+
+        <button type="submit">Get Report</button>
+    </form>
+</body>
+</html>
